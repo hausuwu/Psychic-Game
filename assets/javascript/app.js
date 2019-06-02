@@ -1,12 +1,18 @@
 
 // variables to be incremented or decremented
-var win = 0;
-var lose = 0;
+var win = 1;
+var lose = 1;
 var guessNum = 9;
 // array holding random letters
 var letters = ['a', 'b', 'c']
 // var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 // console.log(letters);
+
+
+function deletechild() {
+    var del = document.querySelector("#guesses");
+    del.innerHTML = "";
+}
 
 
 // game begins
@@ -26,8 +32,9 @@ if(userGuess === 'a' && computerGuess === 'a' || userGuess === 'b' && computerGu
     // updates the wins id 
     document.querySelector("#wins").innerHTML = "Wins: " + win++;
      // updates the guessed letters
-     var textnode = document.createTextNode(userGuess);
-     document.querySelector("#guesses").appendChild(textnode) + ", ";
+    //  var textnode = document.createTextNode(userGuess);
+    //  var reset = document.getElementById("guesses")
+     
 }
     
 else{
@@ -38,7 +45,14 @@ else{
 
 }
 if(guessNum === 0){
+    var reset = document.createTextNode("Guesses so far: ");
+
     document.querySelector("#losses").innerHTML = "Losses: " + lose++;
+    guessNum + 9;
+    deletechild();
+    document.querySelector("#guesses").appendChild(reset);
+    
+
 
 }
 }
