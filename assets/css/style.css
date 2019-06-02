@@ -1,0 +1,23 @@
+.page-wrapper {
+    margin:  0 auto;
+    max-width: 960px;
+}
+
+.container {
+    border: 5px solid black;
+    padding: 50px;
+    float: left;
+}
+
+.game-title {
+    font-size: 50px;
+}
+
+.gameinfo {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.psy {
+    float: right;
+}
